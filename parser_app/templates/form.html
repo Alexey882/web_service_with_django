@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>form</title>
+</head>
+<body class="container">
+    <form method="POST" action="page/">
+        {% csrf_token %}
+        <p>
+            <label>Введите url</label><br>
+            <input type="text" name="url" />
+        </p>
+        <input type="submit" value="send" >
+    </form>
+</body>
+</html>

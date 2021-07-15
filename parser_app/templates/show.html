@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>result</title>
+</head>
+<body class="container">
+    <form method="POST">
+        {% csrf_token %}
+       <p>
+          {{json}}
+       </p>
+</body>
+</html>
